@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: rgb(59, 25, 25);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container-fluid a {
+    font-size: 15px;
+}
+
+.navbar span {
+    color: rgb(201, 92, 88);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.offcanvas-header h5 {
+    font-size: 15px;
+}
+
+.offcanvas-body {
+    padding-left: 50px;
+}
+
+.offcanvas-body a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.offcanvas-body a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius: 50px;
+    background: rgba(179, 107, 107, 0.589);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.offcanvas-body a:hover::after {
+    width: 25%;
+}
+
+.offcanvas-body ul {
+    justify-content: left;
+    padding-bottom: 40px;
+}
+
+.offcanvas-body button {
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 1.9px solid white !important;
+    border-radius: 1px;
+    transition: all 1s ease 0s;
+}
+
+.offcanvas-body button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1.9px solid white !important;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.offcanvas-body button:active {
+    background: black;
+    color: white;
+    border: 1.9px solid white !important;
+}
+
+/* ========== CAROUSEL ========== */
+
+.carousel.slide {
+    background-color: transparent;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    animation: opacity 1s ease;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-label img {
+    position: absolute;
+    top: 54%;
+    left: 55%;
+    width: 300px;
+    height: auto;
+}
+
+.welcome-label.second img {
+    position: absolute;
+    top: 14%;
+    left: 35%;
+    width: 300px;
+    height: auto;
+}
+
+.welcome-label span {
+    color: rgb(201, 92, 88);
+    font-size: 100px;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    z-index: 2;
+}
+
+.carousel-caption p {
+    width: 60%;
+    font-family: Montserrat, Verdana, Helvetica, Arial, sans-serif !important;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* ========== FOOTER ========== */
+
+.footer-container {
+    background-color: rgb(100, 61, 61);
+    padding: 50px 300px;
+}
+
+.location > h3 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 30px;
+    color: rgb(201, 92, 88);
+    padding-bottom: 10px;
+}
+
+.location > ul {
+    color: white;
+    list-style: none;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.location i {
+    color: rgb(155, 152, 152);
+    padding: 10px;
+}
+
+.footer-btn button {
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: 1.9px solid white !important;
+    border-radius: 1px;
+    transition: all 0.4s ease 0s;
+}
+
+.footer-btn button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1.9px solid white !important;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.footer-btn button:active {
+    background: black;
+    color: white;
+    border: 1.9px solid white !important;
+}
+
+.footer-container {
+    gap: 200px;
+    text-align: center;
+}
+
+/* ========== COPYWRITE ========== */
+
+.copywrite {
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+    background: rgb(59, 25, 25);
+    color: rgb(139, 139, 139);
+    font-weight: 300;
+}
+
+.copywrite i {
+    color: rgb(201, 92, 88);
+}
